@@ -115,7 +115,7 @@ def face_check():
                     break
             if matched == False:
                 pil_image = pil_image.filter(ImageFilter.SHARPEN).resize((SIZE,SIZE))
-                pil_image.save(f'{output_folder}unknown/unknown{str(c)}.png')
+                pil_image.save(f'{output_folder}unknown/icon{str(c)}.png')
             c += 1
 
         img.close()
